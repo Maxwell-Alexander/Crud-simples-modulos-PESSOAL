@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD - Modulos</title>
+</head>
+
+<body>
+
+    <div class="conteiner-master">
+
+        <div class="conteiner input-dados">
+
+            <input type="text" aria-label="nome" id="nome" placeholder="Nome" required>
+            <input type="text" aria-label="idade" id="idade" placeholder="Idade" required>
+
+            <button type="button" id="multi_bto">Cadastrar</button>
+
+        </div>
+        <div class="conteiner info-render">
+            <table>
+                <thead id="head_table">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Id</th>
+                        <th>Idade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="body_table">
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/5a9e0298a0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

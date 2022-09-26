@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(40deg, #ff7b00, #ff3300);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 5% 10% 5% 10%;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.conteiner-master {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+
+    box-shadow: 1px 1px 10px black;
+    border-radius: 2px;
+}
+
+.input-dados {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+input {
+    width: 100%;
+    height: 25px;
+    padding-left: 10px;
+
+    font-size: .9rem;
+}
+
+#multi_bto {
+    background-color: whitesmoke;
+    color: #007bff;
+    border: #007bff 1px solid;
+    min-width: 90px;
+    height: 30px;
+
+    padding: 5px;
+
+
+    font-size: .9rem;
+    border-radius: 2px;
+
+}
+
+#multi_bto:hover {
+    background-color: #007bff;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ============ Table ============== */
+
+.info-render {
+    display: flex;
+    justify-content: center;
+}
+
+.info-render table {
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 100%;
+}
+
+thead {
+    background-color: #2B2929;
+    color: whitesmoke;
+    height: 30px;
+    border-radius: 2px;
+
+    box-shadow: 1px 0px 5px #00000052;
+}
+
+th {
+    justify-items: stretch;
+    font-weight: normal;
+}
+
+tr {
+    height: 35px;
+    text-align: center;
+}
+
+#body_table tr {
+    border-top: solid 1px #e6e6e6;
+}
+
+#body_table tr:hover {
+    background-color: #e6e6e6;
+}
+
+.fa {
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.fa-pencil {
+    background-color: #ffc107;
+}
+
+.fa-trash {
+    background-color: #dc3545;
+    color: whitesmoke;
+
+}
+
+@media (max-width: 600px) {
+    .input-dados {
+
+        flex-direction: column;
+    }
+
+    input {
+        width: 95%;
+
+    }
+
+    #multi_bto {
+        width: 90px;
+    }
+
+    /* ==================== Table ======================= */
+
+
+    thead {
+        display: none;
+    }
+
+    #body_table {
+        border: solid 1px #e6e6e6;
+    }
+
+    #body_table tr {
+        border-spacing: 0 10px;
+        text-align: right;
+
+    }
+
+    td {
+        display: block;
+        min-height: 30px;
+        padding: 5px;
+
+        border-top: solid 1px #e6e6e6;
+
+    }
+
+    td:nth-child(1) {
+        background-color: #2B2929;
+        color: whitesmoke;
+
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    td:nth-child(2)::before {
+        content: "Id";
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: 600;
+    }
+
+    td:nth-child(3)::before {
+        content: "Idade";
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: 600;
+    }
+
+    td:nth-child(4)::before {
+        content: "Ação";
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: 600;
+    }
+
+    td::before {
+        float: left;
+    }
+
+}
