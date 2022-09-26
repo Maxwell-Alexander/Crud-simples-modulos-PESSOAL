@@ -12,7 +12,7 @@ Esse é um simples projeto de CRUD para dados pessoais, <br>desenvoldido para ap
 - Modificar
 - Deletar
 
-**[Clique aqui para acessar o projeto](https://maxwell-alexander.github.io/Crud-simples-PESSOAL/)**
+**[Clique aqui para acessar o projeto](https://maxwell-alexander.github.io/Crud-simples-modulos-PESSOAL/)**
 
 <br>
 <br>
