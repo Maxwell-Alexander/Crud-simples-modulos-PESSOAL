@@ -40,6 +40,7 @@ export function alterar() {
 
             localStorage.banco_dados = JSON.stringify(array_dados);
 
+            multi_bto.innerText = "Cadastrar";
             multi_bto.removeEventListener('click', salvar_alteracao);
             multi_bto.addEventListener('click', cadastrar);
 
